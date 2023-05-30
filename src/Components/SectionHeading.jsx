@@ -1,4 +1,4 @@
-const SectitonHeading = ({ heading, subHeading }) => {
+const SectionHeading = ({ heading, subHeading }) => {
   return (
     <div className="mb-12">
       <p className="text-center mb-4 text-yellow-500">--- {subHeading} ---</p>
@@ -9,4 +9,4 @@ const SectitonHeading = ({ heading, subHeading }) => {
   );
 };
 
-export default SectitonHeading;
+export default SectionHeading;

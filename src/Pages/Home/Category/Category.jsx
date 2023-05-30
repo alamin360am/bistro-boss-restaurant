@@ -8,15 +8,15 @@ import slide2 from "./../../../../public/assets/home/slide2.jpg";
 import slide3 from "./../../../../public/assets/home/slide3.jpg";
 import slide4 from "./../../../../public/assets/home/slide4.jpg";
 import slide5 from "./../../../../public/assets/home/slide5.jpg";
-import SectitonHeading from "../../../Components/SectitonHeading";
+import SectionHeading from "../../../Components/SectionHeading";
 
 const Category = () => {
   return (
     <section className="py-16">
-        <SectitonHeading
+        <SectionHeading
             subHeading={"From 11:00am to 10:00pm"}
             heading={"ORDER ONLINE"}
-        ></SectitonHeading>
+        ></SectionHeading>
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
