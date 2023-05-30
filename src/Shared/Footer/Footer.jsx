@@ -1,3 +1,4 @@
+import { BsFacebook, BsTwitter, BsInstagram, BsYoutube } from "react-icons/bs";
 const Footer = () => {
   return (
     <footer className="footer text-white">
@@ -13,7 +14,21 @@ const Footer = () => {
         </div>
         <div className="bg-slate-900 w-full h-full flex flex-col items-center py-12">
           <h2 className="text-3xl mb-4">Follow Us</h2>
-          
+          <p className="mb-3">Join us on social media</p>
+          <div className="flex gap-4">
+            <a href="#">
+              <BsFacebook className="w-6 h-6"></BsFacebook>
+            </a>
+            <a href="#">
+              <BsTwitter className="w-6 h-6"></BsTwitter>
+            </a>
+            <a href="#">
+              <BsInstagram className="w-6 h-6"></BsInstagram>
+            </a>
+            <a href="#">
+              <BsYoutube className="w-6 h-6"></BsYoutube>
+            </a>
+          </div>
         </div>
       </div>
     </footer>
