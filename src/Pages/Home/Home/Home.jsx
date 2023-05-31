@@ -1,3 +1,4 @@
+import useTitle from "../../../Hooks/useTitle";
 import About from "../About/About";
 import Banner from "../Banner/Banner";
 import Category from "../Category/Category";
@@ -7,6 +8,7 @@ import Testimonial from "../Testimonial/Testimonial";
 
 
 const Home = () => {
+    useTitle('Home')
     return (
         <div>
             <div className="w-full">

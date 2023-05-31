@@ -1,22 +1,22 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const NavBar = () => {
   const navOptions = (
     <>
       <li>
-        <Link to='/' className="text-lg hover:text-yellow-400 bg-transparent active">Home</Link>
+        <NavLink to='/' className={`text-lg hover:text-yellow-400 bg-transparent ${({ isActive }) => (isActive ? "active" : "")}`}>Home</NavLink>
       </li>
       <li>
-        <Link to='/' className="text-lg hover:text-yellow-400 bg-transparent">Contact Us</Link>
+        <NavLink to='/contact' className={`text-lg hover:text-yellow-400 bg-transparent ${({ isActive }) => (isActive ? "active" : "")}`}>Contact Us</NavLink>
       </li>
       <li>
-        <Link to='/' className="text-lg hover:text-yellow-400 bg-transparent">Dashboard</Link>
+        <NavLink to='/dashboard' className={`text-lg hover:text-yellow-400 bg-transparent ${({ isActive }) => (isActive ? "active" : "")}`}>Dashboard</NavLink>
       </li>
       <li>
-        <Link to='/' className="text-lg hover:text-yellow-400 bg-transparent">Our Menu</Link>
+        <NavLink to='/menu' className={`text-lg hover:text-yellow-400 bg-transparent ${({ isActive }) => (isActive ? "active" : "")}`}>Our Menu</NavLink>
       </li>
       <li>
-        <Link to='/' className="text-lg hover:text-yellow-400 bg-transparent">Our Shop</Link>
+        <NavLink to='/shop' className={`text-lg hover:text-yellow-400 bg-transparent ${({ isActive }) => (isActive ? "active" : "")}`}>Our Shop</NavLink>
       </li>
     </>
   );
@@ -50,7 +50,7 @@ const NavBar = () => {
                 {navOptions}
                 </ul>
             </div>
-            <Link className="text-lg font-bold">Bistro Boss <span className="font-light hidden lg:block">Restaurant</span></Link>
+            <Link to='/' className="text-lg font-bold">Bistro Boss <span className="font-light hidden lg:block">Restaurant</span></Link>
             </div>
             <div className="flex items-center">
             <ul className="menu menu-horizontal px-1 hidden lg:flex">{navOptions}</ul>
